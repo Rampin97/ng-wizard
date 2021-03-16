@@ -11,16 +11,16 @@ export {
     STEP_STATE,
     STEP_DIRECTIN,
     STEP_POSITION,
-} from './lib/utils/enums'
+} from './lib/utils/enums';
 export {
     Language,
     ToolbarSettings,
     ToolbarButton,
     AnchorSettings,
     NgWizardConfig,
-    NgWizardStep,
+    NgWizardStepDirective,
     StepValidationArgs,
     StepChangedArgs
-} from './lib/utils/interfaces'
+} from './lib/utils/interfaces';
 export { NgWizardComponent } from './lib/core/wizard/ng-wizard.component';
 export { NgWizardStepComponent } from './lib/core/wizard-step/ng-wizard-step.component';

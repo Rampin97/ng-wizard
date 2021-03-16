@@ -1,3 +1,4 @@
+/* tslint:disable:variable-name */
 import { Injectable, Optional, Inject } from '@angular/core';
 import { Subject, Observable } from 'rxjs';
 
@@ -24,7 +25,7 @@ export class NgWizardDataService {
   private _showStep: Subject<number>;
   private _setTheme: Subject<THEME>;
   private _stepChangedArgs: Subject<StepChangedArgs>;
-  private _defaultConfig: NgWizardConfig;
+  private readonly _defaultConfig: NgWizardConfig;
 
   constructor(@Optional() @Inject(NG_WIZARD_CONFIG_TOKEN) private config: NgWizardConfig) {
     this._defaultConfig = { ...DEFAULT_CONFIG };
