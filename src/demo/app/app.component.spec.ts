@@ -1,18 +1,29 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import {NgWizardComponent, NgWizardStepComponent} from '../../ng-wizard/public-api';
+import {NgWizardComponent, NgWizardModule, NgWizardStepComponent} from '../../ng-wizard/public-api';
+import {DemoWizardComponent} from './demo-wizard/demo-wizard.component';
+import {DemoWizardModule} from './demo-wizard/demo-wizard.module';
+import {AppModule} from './app.module';
+import {StepSixComponent} from './demo-wizard/steps/step-6/step-six.component';
+import {AppRoutingModule} from './app-routing.module';
 
 describe('AppComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
+        AppModule,
+        DemoWizardModule,
+        NgWizardModule,
+        AppRoutingModule,
         RouterTestingModule
       ],
       declarations: [
         AppComponent,
+        DemoWizardComponent,
         NgWizardComponent,
-        NgWizardStepComponent
+        NgWizardStepComponent,
+        StepSixComponent
       ],
     }).compileComponents();
   }));
