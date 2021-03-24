@@ -1,4 +1,4 @@
-# ng-wizard
+# ng-wizard - (WIP)
 ng-wizard is a stepper / wizard component that you can use in your Angular applications. You can access the sample demo project **[by clicking here](https://ng-wizard.stackblitz.io)**.
 
 ## Screenshots
